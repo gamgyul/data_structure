@@ -13,7 +13,7 @@ struct Node{
 
 template <typename T>
 class Ch8Tree{
-private:
+protected:
     Node<T>* root;
 
 public:

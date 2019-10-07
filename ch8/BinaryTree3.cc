@@ -64,13 +64,13 @@ template <typename T>
 void Ch8Tree<T>::InorderTraverse(Node<T>* cur, VisitFuncPtr action){
     if (cur == NULL)
         return;
-    if(cur->Left != NULL || cur->Right != NULL)  
-        std::cout << "(" << std::endl;
+    // if(cur->Left != NULL || cur->Right != NULL)
+//        std::cout << "(" << std::endl;
     InorderTraverse(cur->Left, action);
     action(cur->data);
     InorderTraverse(cur->Right, action);
-    if(cur->Left != NULL || cur->Right != NULL)      
-        std::cout << ")" << std::endl;
+    // if(cur->Left != NULL || cur->Right != NULL)
+//        std::cout << ")" << std::endl;
 }
 template <typename T>
 void Ch8Tree<T>::PreorderTraverse(Node<T>* cur, VisitFuncPtr action){
